@@ -11,13 +11,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <style>
-    body {
-      padding-top: 50px;
-      padding-bottom: 20px;
-    }
-  </style>
+  
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="css/main.css">
 
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -27,15 +23,24 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
 
-            
-          <div class="your-class">
-            <div>your content</div>
-            <div>your content</div>
-            <div>your content</div>
-          </div>
+            <div class="slider">
+              <ul class="slider__wrapper">
+              <li class="slider__item"><img src="img/img1.jpg"></li>
+                <li class="slider__item"><img src="img/img2.jpg"></li>
+                <li class="slider__item"><img src="img/img1.jpg"></li>
+              </ul>
+            </div>
+          
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
             <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-
+            <script type="text/javascript" src="js/jquery.glide.js"></script>
+            <script>
+                $('.slider').glide({
+                    autoplay: 5000,
+                    arrows: 'body',
+                    navigation: 'body'
+                });
+            </script>
             <script src="js/vendor/bootstrap.min.js"></script>
            
             <script src="js/main.js"></script>

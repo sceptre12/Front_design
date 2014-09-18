@@ -1,0 +1,33 @@
+html , body{ 
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+body{ 
+	margin:0;
+}
+#my_imgcont img{ 
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#img1{ 
+	z-index: 2;	
+}
+
+#img2{ 
+	z-index: 3;
+}
+#img3{ 
+	z-index: 4;
+}
+#img5{ 
+	z-index: 5;
+}
+#content { 
+	z-index: 70;
+	position: absolute;
+}
+.clear{ 
+	display: none;
+}
